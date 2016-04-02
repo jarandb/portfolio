@@ -283,6 +283,14 @@ body {
   width: 50%;
 }
 
+.skill-yes {
+  color: #d4bb9b;
+}
+
+.skill-no {
+  color: #40444e;
+}
+
 .landing {
   background-image: url("/assets/img/hero.jpg");
   background-position: center center;
@@ -369,4 +377,47 @@ body {
 
 .modal .modal-wrap .socials .social-links {
   padding: 0 1em;
+}
+
+.about {
+  background-image: url("/assets/img/about-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: alpha(opacity=40);
+  height: 100vh;
+}
+
+.about .about-wrapper .about-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about .about-wrapper .about-info .about-me {
+  width: 455px;
+  color: #27272b;
+}
+
+.about .about-wrapper .about-info .about-me .hello {
+  color: #d4bb9b;
+  margin: 0;
+}
+
+.about .about-wrapper .about-info .picture img {
+  border-radius: 50%;
+  max-height: 250px;
+  max-width: 250px;
+  height: auto;
+  width: auto;
+}
+
+.about .about-wrapper .about-info .skills {
+  width: 455px;
+  padding-top: 2em;
+}
+
+.about .about-wrapper .about-info .skills .skill-headline {
+  color: #d4bb9b;
+  margin: 0;
 }

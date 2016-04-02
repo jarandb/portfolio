@@ -1,12 +1,45 @@
 .about{
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/assets/img/about-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: alpha(opacity=40);
   height: 100vh;
-  
+
   .about-wrapper{
 
+    .about-info{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .about-me{
+        width: 455px;
+        color: $black;
+        .hello{
+          color: $gold;
+          margin: 0;
+        }
+      }
+      .picture{
+        img{
+          border-radius: 50%;
+          max-height: 250px;
+          max-width: 250px;
+          height: auto;
+          width: auto;
+        }
+
+      }
+      .skills{
+        width: 455px;
+        padding-top: 2em;
+
+        .skill-headline{
+          color: $gold;
+          margin: 0;
+        }
+      }
+    }
   }
 
 }
