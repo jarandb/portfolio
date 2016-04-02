@@ -9,14 +9,18 @@
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-  <section class="landing">
-    <div class="wrapper">
-      <header class="landing-header">
-        <div class="logo">
-          <p>j<span>B</jspan></p>
-        </div>
+
+  <!-- landing page -->
+  <section class="landing" id="landing">
+    <div class="wrapper landing-wrap">
+      <header class="header">
+        <a href="#landing">
+          <div class="logo">
+            <p>j<span>B</jspan></p>
+          </div>
+        </a>
         <nav>
-          <i class="fa fa-bars fa-2x black"></i>
+          <i class="fa fa-bars fa-2x black" id="modal"></i>
         </nav>
       </header>
       <h1>La oss samarbeide </br>om noe kult</h1>
@@ -29,6 +33,55 @@
     </div>
   </section>
 
+
+<!-- Modal delen -->
+  <section class="modal">
+    <div class="wrapper modal-wrap">
+      <header class="header">
+        <a href="#landing">
+          <div class="logo">
+            <p>j<span>B</jspan></p>
+          </div>
+        </a>
+        <nav>
+          <i class="fa fa-times fa-2x black" id="modal"></i>
+        </nav>
+      </header>
+      <div class="menu-modal">
+        <p id="#">Hjem</p>
+        <p id="#">Om Jarand</p>
+        <p id="#">Portfolio</p>
+        <p id="#">Kontakt</p>
+      </div>
+      <h2 class="modal-pitch">
+        Trenger du en webside eller bare en venn?
+      </br>Ikke nøl med å ta kontakt. Interessert er jeg uansett
+      </h2>
+      <div class="vertical-line"></div>
+      <div class="socials">
+        <a href="https://github.com/jarandb" class="social-links"><i class="fa fa-github fa-2x black"></i></a>
+        <a href="#" class="social-links"><i class="fa fa-instagram fa-2x black"></i></a>
+        <a href="#" class="social-links"><i class="fa fa-twitter fa-2x black"></i></a>
+      </div>
+      <h4 class="modal-mail">jarand@bjrkhg.no</h4>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrapper about-wrapper">
+      <header class="header">
+        <a href="#landing">
+          <div class="logo">
+            <p>j<span>B</jspan></p>
+          </div>
+        </a>
+        <nav>
+          <i class="fa fa-bars fa-2x black" id="modal"></i>
+        </nav>
+      </header>
+      
+    </div>
+  </section>
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
 </body>

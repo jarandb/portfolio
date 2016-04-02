@@ -1,78 +1,64 @@
 .landing{
-  background-image: url("/assets/img/hero.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+background-image: url("/assets/img/hero.jpg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
 
-  .wrapper{
-    padding: 50px 120px;
-    width: 1200px;
-    max-width: 99%;
+  .header{
+    display: flex;
+    justify-content: space-between;
 
-    .landing-header{
-      display: flex;
-      justify-content: space-between;
+    .logo{
+      border: solid 2px $black;
+      float: left;
+      color: $black;
 
-      .logo{
-        border: solid 2px $black;
-        float: left;
-        color: $black;
-
-
-        p{
-          font-size: 24px;
-          padding: 0px 8px;
-          margin: 0;
-
-
-          span{
-            font-weight: 700;
-          }
-        }
-      }
-    }
-
-    h1{
-      font-family: lumberjackrough, helvetica, sans-serif;
-      text-align: center;
-      font-size: 72px;
-      color: $main;
-      padding: 2.75em 0 0 0;
-      margin: 0;
-
-      }
-    .next-page{
-      color: $gold;
-      width: 840px;
-      padding: 1em 0;
-      text-align: center;
-      position: relative;
-      //margin-left: auto;
 
       p{
+        font-size: 24px;
+        padding: 0px 8px;
         margin: 0;
-        float: left;
-        padding-left: 270px;
 
-      }
-      #about{
-        padding-left: 0;
-        &:after{
-          content: "";
-          border-width: 3px solid $black;
-          position: absolute;
-          left: 2407px;
-          top: 1599px;
-          height: 147px;
+
+        span{
+          font-weight: 700;
         }
       }
-      #portfolio{
-        padding-top:5em;
-      }
-      #contact{
-
-      }
     }
+  }
+
+  h1{
+    font-family: lumberjackrough, helvetica, sans-serif;
+    text-align: center;
+    font-size: 72px;
+    color: $main;
+    padding: 2.75em 0 0 0;
+    margin: 0;
+
+    }
+  .next-page{
+    color: $gold;
+    width: 1000px;
+    padding: 5em 0 2em 0;
+    text-align: center;
+    margin-left: auto;
+
+    p{
+      margin: 0;
+      float: left;
+      padding-left: 280px;
+
+    }
+    #about{
+      padding-left: 0;
+    }
+    #portfolio{
+      padding-top:5em;
+    }
+    #contact{
+
+    }
+
   }
 }

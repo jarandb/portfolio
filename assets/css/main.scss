@@ -12,14 +12,10 @@
 @import '2-basics/body-element';
 
 
-
-
-
 // 3 - Modules
-@import '3-modules/example-module-name-lockup';
-@import '3-modules/example-fork-tag';
-@import '3-modules/example-flex-video';
 
 
 // 4 - pages
+@import '4-pages/globals';
 @import '4-pages/landing-page';
+@import '4-pages/modal-page';

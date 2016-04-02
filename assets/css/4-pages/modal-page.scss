@@ -1,0 +1,26 @@
+.modal{
+  background-color: $gold;
+  color: $menu;
+  height: 100vh;
+  .modal-wrap{
+    text-align: center;
+    position: relative;
+    .menu-modal{
+      padding: 3em 0 2em 0;
+    }
+    .modal-pitch{
+      color: $pitch;
+      padding: 0 0 1em 0;
+    }
+    .socials{
+      padding: 2em 0 3em 0;
+
+      .social-links{
+        padding: 0 1em;
+      }
+    }
+    .modal-mail{
+
+    }
+  }
+}
