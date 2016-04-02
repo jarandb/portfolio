@@ -246,6 +246,10 @@ body {
   display: table;
 }
 
+.black {
+  color: #27272b;
+}
+
 .name-lockup {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -321,30 +325,37 @@ body {
 }
 
 .landing {
-  background-image: url("assets/img/hero.jpg");
+  background-image: url("/assets/img/hero.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .landing .wrapper {
-  margin: 50px 120px;
+  padding: 50px 120px;
   width: 1200px;
-  max-width: 100%;
+  max-width: 99%;
 }
 
-.landing .wrapper .logo {
-  border: solid 2px black;
+.landing .wrapper .landing-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing .wrapper .landing-header .logo {
+  border: solid 2px #27272b;
   float: left;
+  color: #27272b;
 }
 
-.landing .wrapper .logo p {
+.landing .wrapper .landing-header .logo p {
   font-size: 24px;
   padding: 0px 8px;
   margin: 0;
 }
 
-.landing .wrapper .logo p span {
+.landing .wrapper .landing-header .logo p span {
   font-weight: 700;
 }
 
@@ -353,4 +364,37 @@ body {
   text-align: center;
   font-size: 72px;
   color: #40444e;
+  padding: 2.75em 0 0 0;
+  margin: 0;
+}
+
+.landing .wrapper .next-page {
+  color: #d4bb9b;
+  width: 840px;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+}
+
+.landing .wrapper .next-page p {
+  margin: 0;
+  float: left;
+  padding-left: 270px;
+}
+
+.landing .wrapper .next-page #about {
+  padding-left: 0;
+}
+
+.landing .wrapper .next-page #about:after {
+  content: "";
+  border-width: 3px solid #27272b;
+  position: absolute;
+  left: 2407px;
+  top: 1599px;
+  height: 147px;
+}
+
+.landing .wrapper .next-page #portfolio {
+  padding-top: 5em;
 }
