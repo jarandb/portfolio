@@ -1,0 +1,18 @@
+.landing{
+  background-image: url(assets/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper{
+  margin: 50px 120px;
+  width: 1200px;
+  max-width: 100%;
+}
+
+h1{
+  font-family: lumberjackrough, helvetica, sans-serif;
+  text-align: center;
+  font-size: 72px;
+  color: $main;
+}
