@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'lumberjackrough';
-  src: url("assets/fonts/lumberjack-rough-webfont.woff") format("woff");
+  src: url("/assets/fonts/lumberjack-rough-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -291,6 +291,10 @@ body {
   color: #40444e;
 }
 
+ul {
+  list-style: none;
+}
+
 .landing {
   background-image: url("/assets/img/hero.jpg");
   background-position: center center;
@@ -384,14 +388,20 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: alpha(opacity=40);
   height: 100vh;
+}
+
+.about .about-wrapper {
+  position: relative;
+  height: 700px;
+  max-width: 100%;
 }
 
 .about .about-wrapper .about-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 10em;
 }
 
 .about .about-wrapper .about-info .about-me {
@@ -414,10 +424,46 @@ body {
 
 .about .about-wrapper .about-info .skills {
   width: 455px;
-  padding-top: 2em;
+  height: 286px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about .about-wrapper .about-info .skills .skill-headline {
   color: #d4bb9b;
   margin: 0;
+}
+
+.about .about-wrapper .about-info .skills .skills-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .about-wrapper .about-info .skills .skills-flex .skills-flex-1 ul li, .about .about-wrapper .about-info .skills .skills-flex .skills-flex-2 ul li {
+  list-style: none;
+}
+
+.about .about-wrapper .about-info .skills .skills-flex .skills-flex-1 ul li h5, .about .about-wrapper .about-info .skills .skills-flex .skills-flex-2 ul li h5 {
+  margin: 0;
+  color: #27272b;
+}
+
+.about .about-wrapper .sign {
+  color: #d4bb9b;
+  position: absolute;
+  bottom: 60px;
+  left: 48%;
+  margin: 0;
+}
+
+.about .about-wrapper .sign:before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: #27272b;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 6px;
+  left: -30px;
 }

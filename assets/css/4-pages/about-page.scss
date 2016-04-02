@@ -3,18 +3,23 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: alpha(opacity=40);
   height: 100vh;
 
   .about-wrapper{
+    position: relative;
+    height: 700px;
+    max-width: 100%;
 
     .about-info{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding-top: 10em;
+
       .about-me{
         width: 455px;
         color: $black;
+
         .hello{
           color: $gold;
           margin: 0;
@@ -32,14 +37,59 @@
       }
       .skills{
         width: 455px;
-        padding-top: 2em;
+        height: 286px;
+        display:flex;
+        flex-direction: column;
+
+
 
         .skill-headline{
           color: $gold;
           margin: 0;
         }
+        .skills-flex{
+          display: flex;
+          flex-direction: row;
+
+          .skills-flex-1, .skills-flex-2{
+
+            ul{
+
+
+              li{
+                list-style: none;
+
+                h5{
+                  margin: 0;
+                  color: $black;
+                }
+
+
+          }
+        }
       }
     }
   }
+}
 
+    .sign{
+      color: $gold;
+      position: absolute;
+      bottom: 60px;
+      left: 48%;
+      margin: 0;
+
+      &:before{
+        content: "";
+        height: 18px;
+        width: 18px;
+        background-color: $black;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        bottom: 6px;
+        left: -30px;
+      }
+    }
+  }
 }
