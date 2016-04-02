@@ -1,18 +1,38 @@
 .landing{
-  background-image: url(assets/img/hero.jpg);
+  background-image: url("assets/img/hero.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
 
-.wrapper{
-  margin: 50px 120px;
-  width: 1200px;
-  max-width: 100%;
-}
 
-h1{
-  font-family: lumberjackrough, helvetica, sans-serif;
-  text-align: center;
-  font-size: 72px;
-  color: $main;
+  .wrapper{
+    margin: 50px 120px;
+    width: 1200px;
+    max-width: 100%;
+
+
+    .logo{
+      border: solid 2px black;
+      float: left;
+
+      p{
+        font-size: 24px;
+        padding: 0px 8px;
+        margin: 0;
+
+        span{
+          font-weight: 700;
+        }
+      }
+      }
+
+    h1{
+      font-family: lumberjackrough, helvetica, sans-serif;
+      text-align: center;
+      font-size: 72px;
+      color: $main;
+
+      }
+
+  }
 }
