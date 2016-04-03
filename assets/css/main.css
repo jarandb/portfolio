@@ -250,6 +250,11 @@ body {
   color: #27272b;
 }
 
+.mega-wrapper {
+  width: 1440px;
+  max-width: 100%;
+}
+
 .wrapper {
   padding: 50px 120px;
   width: 1200px;
@@ -539,13 +544,29 @@ ul {
   height: 100vh;
 }
 
-.portfolio .contact-wrapper {
+.portfolio .portfolio-wrapper {
   height: 700px;
 }
 
-.portfolio .contact-wrapper .title {
-  text-align: center;
+.portfolio .portfolio-wrapper .title {
   color: #27272b;
-  font-size: 60px;
   font-family: lumberjackrough, helvetica, sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.portfolio .portfolio-wrapper .control {
+  color: #d4bb9b;
+  font-size: 3em;
+  padding-top: 15%;
+}
+
+.portfolio .portfolio-wrapper .control .left {
+  float: left;
+}
+
+.portfolio .portfolio-wrapper .control .right {
+  float: right;
 }

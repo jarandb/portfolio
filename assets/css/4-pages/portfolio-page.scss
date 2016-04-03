@@ -5,14 +5,28 @@
   background-repeat: no-repeat;
   height: 100vh;
 
-  .contact-wrapper{
+  .portfolio-wrapper{
     height: 700px;
 
     .title{
-      text-align: center;
       color: $black;
-      font-size: 60px;
       font-family: lumberjackrough, helvetica, sans-serif;
+      font-size: 2.5em;
+      margin: 0;
+      text-align: center;
+      padding-top: 1em;
+    }
+    .control{
+      color: $gold;
+      font-size: 3em;
+      padding-top: 15%;
+
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
     }
   }
 }
