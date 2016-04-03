@@ -210,8 +210,10 @@
         Kontakt meg
       </h2>
 
-      <form action="" method="post">
-
+      <form class="clearfix" action="mail.php" method="post">
+         <input name="email" placeholder="Epost" id="email" type="email"/>
+         <textarea name="message" id="message" placeholder="message"></textarea>
+         <input type="submit" value="Send">
       </form>
 
       <h3 class="contact-mail">
@@ -221,6 +223,24 @@
     </div>
   </section>
   <!-- end conctact -->
+  <section class="portfolio">
+    <div class="wrapper portfolio-wrapper">
+      <header class="header">
+        <a href="#landing">
+          <div class="logo">
+            <p>j<span>B</jspan></p>
+          </div>
+        </a>
+        <nav>
+          <i class="fa fa-bars fa-2x black" id="modal"></i>
+        </nav>
+      </header>
+      <!-- end portfolio header -->
+      <h1 class="title">Navn på projektet</h1>
+    <!-- next div is wrapper -->
+    </div>
+  </section>
+  <!-- end portfolio -->
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
 </body>

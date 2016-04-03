@@ -1,0 +1,18 @@
+.portfolio{
+  background-image: url("/assets/img/smia.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .contact-wrapper{
+    height: 700px;
+
+    .title{
+      text-align: center;
+      color: $black;
+      font-size: 60px;
+      font-family: lumberjackrough, helvetica, sans-serif;
+    }
+  }
+}
