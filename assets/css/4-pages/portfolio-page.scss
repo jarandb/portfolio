@@ -6,7 +6,7 @@
   height: 100vh;
 
   .portfolio-wrapper{
-    height: 700px;
+
 
     .title{
       color: $black;
@@ -14,12 +14,12 @@
       font-size: 2.5em;
       margin: 0;
       text-align: center;
-      padding-top: 1em;
+      padding-top: 3.5em;
     }
     .control{
       color: $gold;
       font-size: 3em;
-      padding-top: 15%;
+
 
       .left{
         float: left;
@@ -30,3 +30,22 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .portfolio{
+
+
+    .portfolio-wrapper{
+
+
+      .title{
+        padding-top: 5em;
+      }
+      .control{
+      
+      }
+    }
+  }
+
+  // media query end
+  }

@@ -5,29 +5,6 @@ background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
 
-  .header{
-    display: flex;
-    justify-content: space-between;
-
-    .logo{
-      border: solid 2px $black;
-      float: left;
-      color: $black;
-
-
-      p{
-        font-size: 24px;
-        padding: 0px 8px;
-        margin: 0;
-
-
-        span{
-          font-weight: 700;
-        }
-      }
-    }
-  }
-
   h1{
     font-family: lumberjackrough, helvetica, sans-serif;
     text-align: center;
@@ -39,26 +16,71 @@ height: 100vh;
     }
   .next-page{
     color: $gold;
-    width: 1000px;
-    padding: 5em 0 2em 0;
-    text-align: center;
-    margin-left: auto;
+    display:flex;
+    justify-content: space-around;;
+
 
     p{
       margin: 0;
-      float: left;
-      padding-left: 280px;
+    }
+  }
+}
 
-    }
-    #about{
-      padding-left: 0;
-    }
-    #portfolio{
-      padding-top:5em;
-    }
-    #contact{
+@media screen and (max-width: 1000px) {
+  .landing{
 
-    }
 
+    h1{
+
+      }
+    .next-page{
+
+
+
+      p{
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing{
+
+
+    h1{
+        font-size: 4em;
+      }
+    .next-page{
+
+
+
+      p{
+
+
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .landing{
+
+
+    h1{
+        font-size: 3em;
+      }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing{
+
+
+    h1{
+        font-size: 2.75em;
+        padding-top: 5em;
+      }
   }
 }

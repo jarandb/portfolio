@@ -1,7 +1,11 @@
 $( document ).ready(function() {
 
-  // Get started!
-  $(#modal).click($function(){
-    
-  })
+  // $(".logo").on("click"),function{
+  //   $(".landing").removeClass("hidden");
+  // };
+
+  $("#about").on("click",function(){
+    $(".landing").addClass("hidden");
+    $(".about").removeClass("hidden");
+  });
 });

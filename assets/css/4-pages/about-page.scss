@@ -5,10 +5,7 @@
   background-repeat: no-repeat;
   height: 100vh;
 
-  .about-wrapper{
-    position: relative;
-    height: 700px;
-    max-width: 100%;
+
 
     .about-info{
       display: flex;
@@ -75,9 +72,9 @@
     .sign{
       color: $gold;
       position: absolute;
-      bottom: 60px;
       left: 48%;
       margin: 0;
+      padding-top: 5.5em;
 
       &:before{
         content: "";
@@ -91,5 +88,122 @@
         left: -30px;
       }
     }
+  //}
+}
+
+@media screen and (max-width: 1000px) {
+  .about{
+      .about-info{
+        flex-direction: column;
+        padding-top: 3em;
+
+        .about-me{
+            font-size: 14px;
+        }
+        .picture{
+          img{
+            max-height: 150px;
+            max-width: 150px;
+          }
+
+        }
+        .skills{
+          width: 455px;
+          height: auto;
+          display:flex;
+          flex-direction: column;
+
+
+
+          .skill-headline{
+            color: $gold;
+            margin: 0;
+          }
+          .skills-flex{
+            display: flex;
+            flex-direction: row;
+
+            .skills-flex-1, .skills-flex-2{
+
+              ul{
+                padding-left: 0;
+                padding-right: 3.3em;
+              }
+            }
+          }
+        }
+      }
+      .sign{
+        color: $gold;
+        position: absolute;
+        left: 48%;
+        margin: 0;
+        padding-top: 1em;
+
+        &:before{
+          content: "";
+          height: 18px;
+          width: 18px;
+          background-color: $black;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          bottom: 6px;
+          left: -30px;
+        }
+      }
+}
+      // media query
+    }
+
+     @media only screen and (max-width : 700px) {
+       .about{
+           .sign{
+             left: 42%;
+           }
+         }
+           // media query
+     }
+
+     @media screen and (max-width: 480px) {
+       .about{
+           .about-info{
+             flex-direction: column;
+             padding-top: 3em;
+             width: 350px;
+
+             .about-me{
+                 font-size: 12px;
+                 width: 350px;
+
+             }
+             .picture{
+               img{
+                 max-height: 100px;
+                 max-width: 100px;
+               }
+
+             }
+             .skills{
+               width: 350px;
+                .skill-headline{
+                  margin:auto;
+                }
+                .skills-flex{
+                  flex-direction: column;
+                  margin: auto;
+
+                  .skills-flex-1, .skills-flex-2{
+
+                    ul{
+                      font-size: 12px;
+                      }
+                    }
+                  }
+                 }
+                }
+           .sign{
+             left: 42%;
+           }
   }
 }

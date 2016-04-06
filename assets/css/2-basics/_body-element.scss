@@ -9,11 +9,11 @@ body{
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  
+
 }
 
 .clearfix{
-  @include clearfix;
+//  @include clearfix;
 }
 
 .black{
