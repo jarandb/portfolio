@@ -1,31 +1,48 @@
 .portfolio{
-  background-image: url("/assets/img/smia.jpg");
+  background-image: url("/assets/img/about-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 
   .portfolio-wrapper{
 
-
-    .title{
-      color: $black;
-      font-family: lumberjackrough, helvetica, sans-serif;
-      font-size: 2.5em;
-      margin: 0;
-      text-align: center;
-      padding-top: 3.5em;
+    h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: $main;
     }
-    .control{
-      color: $gold;
-      font-size: 3em;
+
+    p{
+      text-align: center;
+      font-size: 1em;
+      color: $main;
+    }
+    .prosjekter{
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;;
+        align-items: center;
+
+        a{
+
+          img{
+            padding: 1em 0;
+            filter: grayscale(100%);
 
 
-      .left{
-        float: left;
+          }
+        }
+
       }
-      .right{
-        float: right;
+      &:last-child{
+        padding-bottom: 5em;
       }
     }
   }
@@ -38,12 +55,7 @@
     .portfolio-wrapper{
 
 
-      .title{
-        padding-top: 5em;
-      }
-      .control{
-      
-      }
+
     }
   }
 

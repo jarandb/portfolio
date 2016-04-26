@@ -335,7 +335,7 @@ ul {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 }
 
 .landing h1 {
@@ -343,17 +343,7 @@ ul {
   text-align: center;
   font-size: 72px;
   color: #40444e;
-  padding: 2.75em 0 0 0;
-  margin: 0;
-}
-
-.landing .next-page {
-  color: #d4bb9b;
-  display: flex;
-  justify-content: space-around;
-}
-
-.landing .next-page p {
+  padding: 1em  0;
   margin: 0;
 }
 
@@ -372,7 +362,7 @@ ul {
 @media screen and (max-width: 480px) {
   .landing h1 {
     font-size: 2.75em;
-    padding-top: 5em;
+    padding-top: 1em;
   }
 }
 
@@ -409,14 +399,14 @@ ul {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 }
 
 .about .about-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10em;
+  padding: 10em 0 5em 0;
 }
 
 .about .about-info .about-me {
@@ -461,26 +451,6 @@ ul {
 .about .about-info .skills .skills-flex .skills-flex-1 ul li h5, .about .about-info .skills .skills-flex .skills-flex-2 ul li h5 {
   margin: 0;
   color: #27272b;
-}
-
-.about .sign {
-  color: #d4bb9b;
-  position: absolute;
-  left: 48%;
-  margin: 0;
-  padding-top: 5.5em;
-}
-
-.about .sign:before {
-  content: "";
-  height: 18px;
-  width: 18px;
-  background-color: #27272b;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  bottom: 6px;
-  left: -30px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -576,161 +546,70 @@ ul {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.contact .contact-wrapper h2 {
-  color: #27272b;
-  padding: 3em 0em 0em 9.2em;
-}
-
-.contact .contact-wrapper form {
-  margin: 0em 0 0 14em;
-}
-
-.contact .contact-wrapper form input[type="email"] {
-  width: 700px;
-  height: 60px;
-  background: none;
-  border: solid 2px #27272b;
-  margin-bottom: 1em;
-  padding-left: 1em;
-  outline: none;
-  color: #40444e;
-  font-size: 1.5em;
-}
-
-.contact .contact-wrapper form textarea {
-  width: 700px;
-  height: 115px;
-  background: none;
-  border: solid 2px #27272b;
-  margin-bottom: 1em;
-  padding: 2.5em 0 0 1em;
-  outline: none;
-  color: #40444e;
-  font-size: 1.5em;
-}
-
-.contact .contact-wrapper form input[type="submit"] {
-  border-radius: 25px;
-  background-color: white;
-  box-shadow: 0px 21px 87.32px 30.68px rgba(57, 58, 64, 0.25);
-  width: 220px;
-  height: 55px;
-  margin-right: 8em;
+  height: auto;
 }
 
 .contact .contact-wrapper .contact-mail {
   text-align: center;
   color: #27272b;
   margin: 0;
-  padding: 3em 0 0 0;
-  font-size: 2em;
-}
-
-@media screen and (max-width: 1000px) {
-  .contact .contact-wrapper h2 {
-    padding: 3em 0em 0em 3.3em;
-  }
-  .contact .contact-wrapper form {
-    margin: 0em 0 0 5em;
-  }
-  .contact .contact-wrapper form input[type="email"] {
-    width: 600px;
-  }
-  .contact .contact-wrapper form textarea {
-    width: 600px;
-    padding: 2.5em 0 0 1em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .contact .contact-wrapper h2 {
-    padding: 3em 0em 0em 3em;
-  }
-  .contact .contact-wrapper form {
-    margin: 0em 0 0 4.5em;
-  }
-  .contact .contact-wrapper form input[type="email"] {
-    width: 450px;
-  }
-  .contact .contact-wrapper form textarea {
-    width: 450px;
-    padding: 2.5em 0 0 1em;
-  }
-  .contact .contact-wrapper form input[type="submit"] {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .contact .contact-wrapper h2 {
-    padding: 3em 0em 0em 1em;
-  }
-  .contact .contact-wrapper form {
-    margin: 0em 0 0 1.5em;
-  }
-  .contact .contact-wrapper form input[type="email"] {
-    width: 400px;
-  }
-  .contact .contact-wrapper form textarea {
-    width: 400px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .contact .contact-wrapper h2 {
-    display: none;
-  }
-  .contact .contact-wrapper form {
-    display: none;
-  }
-  .contact .contact-wrapper .contact-mail {
-    padding: 5em 0 0 0;
-    font-size: 3em;
-  }
-}
-
-@media only screen and (max-width: 408px) {
-  .contact .contact-wrapper .contact-mail {
-    padding-top: 5em;
-    font-size: 2.3em;
-  }
-}
-
-.portfolio {
-  background-image: url("/assets/img/smia.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.portfolio .portfolio-wrapper .title {
-  color: #27272b;
-  font-family: lumberjackrough, helvetica, sans-serif;
-  font-size: 2.5em;
-  margin: 0;
-  text-align: center;
-  padding-top: 3.5em;
-}
-
-.portfolio .portfolio-wrapper .control {
-  color: #d4bb9b;
+  padding: 1em 0 2em 0;
   font-size: 3em;
 }
 
-.portfolio .portfolio-wrapper .control .left {
-  float: left;
+.portfolio {
+  background-image: url("/assets/img/about-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
-.portfolio .portfolio-wrapper .control .right {
-  float: right;
+.portfolio .portfolio-wrapper h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #40444e;
 }
 
-@media screen and (max-width: 1000px) {
-  .portfolio .portfolio-wrapper .title {
-    padding-top: 5em;
-  }
+.portfolio .portfolio-wrapper p {
+  text-align: center;
+  font-size: 1em;
+  color: #40444e;
+}
+
+.portfolio .portfolio-wrapper .prosjekter {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio .portfolio-wrapper .prosjekter .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrapper .prosjekter .row a img {
+  padding: 1em 0;
+  filter: grayscale(100%);
+}
+
+.portfolio .portfolio-wrapper .prosjekter:last-child {
+  padding-bottom: 5em;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+footer p span {
+  color: #d4bb9b;
+}
+
+footer p:last-child {
+  padding: 0 0 10px 0;
 }

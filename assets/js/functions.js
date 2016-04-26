@@ -4,8 +4,7 @@ $( document ).ready(function() {
   //   $(".landing").removeClass("hidden");
   // };
 
-  $("#about").on("click",function(){
-    $(".landing").addClass("hidden");
-    $(".about").removeClass("hidden");
+  $(".modal").on("click",function(){
+    $(".hidden").toggleClass();
   });
 });

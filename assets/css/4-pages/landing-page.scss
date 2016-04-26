@@ -3,27 +3,17 @@ background-image: url("/assets/img/hero.jpg");
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
-height: 100vh;
+height: auto;
 
   h1{
     font-family: lumberjackrough, helvetica, sans-serif;
     text-align: center;
     font-size: 72px;
     color: $main;
-    padding: 2.75em 0 0 0;
+    padding: 1em  0 ;
     margin: 0;
 
     }
-  .next-page{
-    color: $gold;
-    display:flex;
-    justify-content: space-around;;
-
-
-    p{
-      margin: 0;
-    }
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -80,7 +70,7 @@ height: 100vh;
 
     h1{
         font-size: 2.75em;
-        padding-top: 5em;
+        padding-top: 1em;
       }
   }
 }

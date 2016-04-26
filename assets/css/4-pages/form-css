@@ -1,0 +1,47 @@
+form{
+  margin: 0em 0 0 14em;
+
+  input[type="email"]{
+    width: 700px;
+    height: 60px;
+    background: none;
+    border: solid 2px $black;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    outline: none;
+    color: $main;
+    font-size: 1.5em;
+  }
+  textarea{
+    width: 700px;
+    height: 115px;
+    background: none;
+    border: solid 2px $black;
+    margin-bottom: 1em;
+    padding: 2.5em 0 0 1em;
+    outline: none;
+    color: $main;
+    font-size: 1.5em;
+  }
+  input[type="submit"]{
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 21px 87.32px 30.68px rgba(57, 58, 64, 0.25);
+    width: 220px;
+    height: 55px;
+
+    margin-right: 8em;
+  }
+
+}
+
+
+<h2 class="contact-headline">
+  Kontakt meg
+</h2>
+
+<form class="clearfix" action="mail.php" method="post">
+   <input name="email" placeholder="Epost" id="email" type="email"/>
+   <textarea name="message" id="message" placeholder="message"></textarea>
+   <input type="submit" value="Send">
+</form>

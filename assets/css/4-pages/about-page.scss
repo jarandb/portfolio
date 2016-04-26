@@ -3,7 +3,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 
 
 
@@ -11,7 +11,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding-top: 10em;
+      padding: 10em 0 5em 0;
 
       .about-me{
         width: 455px;
@@ -69,26 +69,7 @@
   }
 }
 
-    .sign{
-      color: $gold;
-      position: absolute;
-      left: 48%;
-      margin: 0;
-      padding-top: 5.5em;
 
-      &:before{
-        content: "";
-        height: 18px;
-        width: 18px;
-        background-color: $black;
-        border-radius: 50%;
-        display: inline-block;
-        position: absolute;
-        bottom: 6px;
-        left: -30px;
-      }
-    }
-  //}
 }
 
 @media screen and (max-width: 1000px) {

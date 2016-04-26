@@ -3,170 +3,19 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 
   .contact-wrapper{
 
-    h2{
-      color: $black;
-          padding: 3em 0em 0em 9.2em;
-    }
-    form{
-      margin: 0em 0 0 14em;
-
-      input[type="email"]{
-        width: 700px;
-        height: 60px;
-        background: none;
-        border: solid 2px $black;
-        margin-bottom: 1em;
-        padding-left: 1em;
-        outline: none;
-        color: $main;
-        font-size: 1.5em;
-      }
-      textarea{
-        width: 700px;
-        height: 115px;
-        background: none;
-        border: solid 2px $black;
-        margin-bottom: 1em;
-        padding: 2.5em 0 0 1em;
-        outline: none;
-        color: $main;
-        font-size: 1.5em;
-      }
-      input[type="submit"]{
-        border-radius: 25px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 21px 87.32px 30.68px rgba(57, 58, 64, 0.25);
-        width: 220px;
-        height: 55px;
-
-        margin-right: 8em;
-      }
-
-    }
     .contact-mail{
       text-align: center;
       color: $black;
       margin: 0;
-      padding: 3em 0 0 0;
-      font-size: 2em;
+      padding: 1em 0 2em 0;
+      font-size: 3em;
 
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .contact{
-    .contact-wrapper{
-
-      h2{
-        padding: 3em 0em 0em 3.3em
-      }
-      form{
-        margin: 0em 0 0 5em;
-
-        input[type="email"]{
-          width: 600px;
-        }
-        textarea{
-          width: 600px;
-          padding: 2.5em 0 0 1em;
-        }
-      }
-    }
-  }
-// media query end
-}
-
-@media only screen and (max-width : 768px) {
-  .contact{
-    .contact-wrapper{
-
-      h2{
-        padding: 3em 0em 0em 3em
-      }
-      form{
-        margin: 0em 0 0 4.5em;
-
-        input[type="email"]{
-          width: 450px;
-        }
-        textarea{
-          width: 450px;
-          padding: 2.5em 0 0 1em;
-        }
-        input[type="submit"]{
-
-          width: 175px;
-
-        }
-      }
-    }
-  }
-
-  //media querie ends
-   }
-
-   @media only screen and (max-width : 700px) {
-     .contact{
-       .contact-wrapper{
-
-         h2{
-           padding: 3em 0em 0em 1em
-         }
-         form{
-           margin: 0em 0 0 1.5em;
-
-           input[type="email"]{
-             width: 400px;
-           }
-           textarea{
-             width: 400px;
-
-           }
-         }
-       }
-     }
-
-     //media querie ends
-      }
-
-      @media only screen and (max-width : 700px) {
-        .contact{
-          .contact-wrapper{
-
-            h2{
-              display:none;
-            }
-            form{
-              display:none;
-            }
-            .contact-mail{
-
-              padding: 5em 0 0 0;
-              font-size: 3em;
-
-            }
-          }
-        }
-
-        //media querie ends
-         }
-
-         @media only screen and (max-width : 408px) {
-           .contact{
-             .contact-wrapper{
-               .contact-mail{
-
-                 padding-top: 5em;
-                 font-size: 2.3em;
-
-               }
-             }
-           }
-
-           //media querie ends
-            }
+  

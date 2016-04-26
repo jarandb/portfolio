@@ -20,20 +20,76 @@
           </div>
         </a>
         <nav>
-          <i class="fa fa-bars fa-2x black" id="modal"></i>
+          <i class="fa fa-bars fa-2x black" class="modal"></i>
         </nav>
       </header>
+
       <h1>La oss samarbeide </br>om noe kult</h1>
 
-      <div class="next-page">
-        <p id="about">Om Jarand</p>
-        <p id="portfolio">Portfolio</p>
-        <p id="contact">Kontakt</p>
-      </div>
+
     </div>
   </section>
 
 
+  <section class="portfolio">
+    <div class="wrapper portfolio-wrapper">
+      <header class="header">
+        <a href="#landing">
+          <div class="logo">
+            <p>j<span>B</jspan></p>
+          </div>
+        </a>
+        <nav>
+          <i class="fa fa-bars fa-2x black" class="modal"></i>
+        </nav>
+      </header>
+      <!-- end portfolio header -->
+
+      <h2>Prosjekter jeg har jobbet på</h2>
+      <p> Dette er noen av prosjektene jeg har jobbet med <p>
+        <div class="prosjekter">
+          <div class="row">
+            <a href="www.bratan.no">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+          </div>
+          <div class="row">
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+            <a href="#">
+              <img src="assets/img/bratan.png" alt="">
+
+            </a>
+          </div>
+        </div>
+
+    <!-- next div is wrapper -->
+    </div>
+  </section>
+  <!-- end portfolio -->
 
 
 <!-- om delen -->
@@ -46,7 +102,7 @@
           </div>
         </a>
         <nav>
-          <i class="fa fa-bars fa-2x black" id="modal"></i>
+          <i class="fa fa-bars fa-2x black" class="modal"></i>
         </nav>
       </header>
       <div class="about-info">
@@ -157,7 +213,6 @@
           </div>
         </div>
       </div>
-      <h2 class="sign">Jarand</h4>
     </div>
   </section>
 
@@ -174,19 +229,9 @@
           </div>
         </a>
         <nav>
-          <i class="fa fa-bars fa-2x black" id="modal"></i>
+          <i class="fa fa-bars fa-2x black" class="modal"></i>
         </nav>
       </header>
-
-      <h2 class="contact-headline">
-        Kontakt meg
-      </h2>
-
-      <form class="clearfix" action="mail.php" method="post">
-         <input name="email" placeholder="Epost" id="email" type="email"/>
-         <textarea name="message" id="message" placeholder="message"></textarea>
-         <input type="submit" value="Send">
-      </form>
 
       <h3 class="contact-mail">
         jarand@bjrkhg.no
@@ -199,35 +244,9 @@
 
 
   <!-- end conctact -->
-  <section class="portfolio">
-    <div class="wrapper portfolio-wrapper">
-      <header class="header">
-        <a href="#landing">
-          <div class="logo">
-            <p>j<span>B</jspan></p>
-          </div>
-        </a>
-        <nav>
-          <i class="fa fa-bars fa-2x black" id="modal"></i>
-        </nav>
-      </header>
-      <!-- end portfolio header -->
-      <h1 class="title">Navn på projektet</h1>
-      <div class="control clearfix">
-        <div class="left">
-          <
-        </div>
-        <div class="right">
-          >
-        </div>
-      </div>
-    <!-- next div is wrapper -->
-    </div>
-  </section>
-  <!-- end portfolio -->
 
   <!-- Modal delen -->
-    <section class="modal">
+    <section class="modal hidden">
       <div class="wrapper modal-wrap">
         <header class="header">
           <a href="#landing">
@@ -258,6 +277,11 @@
         <h4 class="modal-mail">jarand@bjrkhg.no</h4>
       </div>
     </section>
+
+    <footer>
+      <p>Laget av <span>Jarand Bjerkhaug</span>©</p>
+      <p>2016</p>
+    </footer>
 
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
