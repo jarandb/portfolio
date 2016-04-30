@@ -7,23 +7,25 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" href="/assets/img/jbLogo.ico" type="image/x-icon">
 </head>
 <body>
 
   <!-- landing page -->
   <section class="landing" id="landing">
     <div class="wrapper landing-wrap">
-      <header class="header">
-        <a href="#landing">
-          <div class="logo">
-            <p>j<span>B</jspan></p>
-          </div>
-        </a>
-        <nav>
-          <i class="fa fa-bars fa-2x black" class="modal"></i>
-        </nav>
-      </header>
-
+      <div class="fixed-container">
+        <header class="header">
+          <a href="#landing">
+            <div class="logo">
+              <p>j<span>B</jspan></p>
+            </div>
+          </a>
+          <nav class="open-modal">
+            <i class="fa fa-bars fa-2x black"></i>
+          </nav>
+        </header>
+      </div>
       <h1>La oss samarbeide </br>om noe kult</h1>
 
 
@@ -33,57 +35,27 @@
 
   <section class="portfolio">
     <div class="wrapper portfolio-wrapper">
-      <header class="header">
-        <a href="#landing">
-          <div class="logo">
-            <p>j<span>B</jspan></p>
-          </div>
-        </a>
-        <nav>
-          <i class="fa fa-bars fa-2x black" class="modal"></i>
-        </nav>
-      </header>
-      <!-- end portfolio header -->
+      <h2>Prosjekter</h2>
 
-      <h2>Prosjekter jeg har jobbet på</h2>
-      <p> Dette er noen av prosjektene jeg har jobbet med <p>
         <div class="prosjekter">
           <div class="row">
-            <a href="www.bratan.no">
-              <img src="assets/img/bratan.png" alt="">
 
+            <a href="http://www.bratan.no">
+              <div class="project bratan">
+                <h3>Bratan gård</h3>
+              </div>
             </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
 
+            <a href="http://frigg.hiof.no/bo16-g20/rettlin/index.html">
+              <div class="project rettlin">
+                <h3>Rettlin</h3>
+              </div>
             </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
 
-            </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
-
-            </a>
           </div>
-          <div class="row">
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
 
-            </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
 
-            </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
-
-            </a>
-            <a href="#">
-              <img src="assets/img/bratan.png" alt="">
-
-            </a>
-          </div>
+        <!-- ends projekter -->
         </div>
 
     <!-- next div is wrapper -->
@@ -93,18 +65,8 @@
 
 
 <!-- om delen -->
-  <section class="about">
+  <section class="about" id="aboutView">
     <div class="wrapper about-wrapper">
-      <header class="header">
-        <a href="#landing">
-          <div class="logo">
-            <p>j<span>B</jspan></p>
-          </div>
-        </a>
-        <nav>
-          <i class="fa fa-bars fa-2x black" class="modal"></i>
-        </nav>
-      </header>
       <div class="about-info">
         <div class="about-me">
           <h3 class="hello">Hei, jeg er Jarand</h3>
@@ -222,16 +184,6 @@
   <!-- kontakt delen -->
   <section class="contact" id="contact">
     <div class="wrapper contact-wrapper">
-      <header class="header">
-        <a href="#landing">
-          <div class="logo">
-            <p>j<span>B</jspan></p>
-          </div>
-        </a>
-        <nav>
-          <i class="fa fa-bars fa-2x black" class="modal"></i>
-        </nav>
-      </header>
 
       <h3 class="contact-mail">
         jarand@bjrkhg.no
@@ -246,7 +198,7 @@
   <!-- end conctact -->
 
   <!-- Modal delen -->
-    <section class="modal hidden">
+    <section class="modal">
       <div class="wrapper modal-wrap">
         <header class="header">
           <a href="#landing">
@@ -254,15 +206,23 @@
               <p>j<span>B</jspan></p>
             </div>
           </a>
-          <nav>
-            <i class="fa fa-times fa-2x black" id="exit-modal"></i>
+          <nav class="exit-modal">
+            <i class="fa fa-times fa-2x black"></i>
           </nav>
         </header>
         <div class="menu-modal">
-          <p id="#home-modal">Hjem</p>
-          <p id="#about-modal">Om Jarand</p>
-          <p id="#port-modal">Portfolio</p>
-          <p id="#contact-modal">Kontakt</p>
+          <div id="home-modal">
+            <p>Hjem</p>
+          </div>
+          <div id="port-modal">
+            <p>Portfolio</p>
+          </div>
+          <div id="about-modal">
+            <p>Om Jarand</p>
+          </div>
+          <div id="contact-modal">
+            <p>Kontakt</p>
+          </div>
         </div>
         <h2 class="modal-pitch">
           Trenger du en webside?

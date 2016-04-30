@@ -12,6 +12,10 @@ body{
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -29,9 +33,17 @@ body{
   width: 80%;
 //  overflow-x: hidden;
   height: auto;
+
+  .fixed-container{
+    position: fixed;
+    width: 85%;
+  }
 }
 
+
+
 .header{
+
   display: flex;
   justify-content: space-between;
 
@@ -82,4 +94,15 @@ ul{list-style: none;}
 
 #home-modal,#about-modal,#port-modal,#contact-modal,#modal,#about,#portfolio,#contact{
   cursor:pointer;
+}
+
+
+@media screen and (max-width: 400px) {
+.wrapper{
+  .fixed-container{
+    width: 75%;
+  }
+}
+
+//media query ends
 }

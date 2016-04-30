@@ -4,14 +4,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
-
-
+  .about-wrapper{
+    padding: 0 0 0 10%;
 
     .about-info{
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 10em 0 5em 0;
+      padding: 5em 0;
 
       .about-me{
         width: 455px;
@@ -68,12 +68,12 @@
     }
   }
 }
-
-
+}
 }
 
 @media screen and (max-width: 1000px) {
   .about{
+    .about-wrapper{
       .about-info{
         flex-direction: column;
         padding-top: 3em;
@@ -114,44 +114,19 @@
           }
         }
       }
-      .sign{
-        color: $gold;
-        position: absolute;
-        left: 48%;
-        margin: 0;
-        padding-top: 1em;
-
-        &:before{
-          content: "";
-          height: 18px;
-          width: 18px;
-          background-color: $black;
-          border-radius: 50%;
-          display: inline-block;
-          position: absolute;
-          bottom: 6px;
-          left: -30px;
-        }
-      }
+    }
 }
       // media query
     }
 
-     @media only screen and (max-width : 700px) {
-       .about{
-           .sign{
-             left: 42%;
-           }
-         }
-           // media query
-     }
 
      @media screen and (max-width: 480px) {
        .about{
+         .about-wrapper{
            .about-info{
              flex-direction: column;
-             padding-top: 3em;
              width: 350px;
+             padding:2em 0 2em 0;
 
              .about-me{
                  font-size: 12px;
@@ -183,8 +158,64 @@
                   }
                  }
                 }
-           .sign{
-             left: 42%;
-           }
+}
   }
+}
+
+
+@media screen and (max-width: 400px) {
+  .about{
+    .about-wrapper{
+      .about-info{
+        width: 300px;
+
+        .about-me{
+            width: 250px;
+
+        }
+      }
+    }
+  }
+//media query ends
+}
+
+@media screen and (max-width: 375px) {
+  .about{
+    .about-wrapper{
+      .about-info{
+        width: 280px;
+
+
+        .about-me{
+          width: 280px;
+
+        }
+        .skills{
+          width: 280px;
+        }
+      }
+    }
+    }
+//media query ends
+}
+
+@media screen and (max-width: 350px) {
+  .about{
+    .about-wrapper{
+      .about-info{
+        max-width: 235px;
+
+
+        .about-me{
+          width: 225;
+          padding-left: 10px;
+
+        }
+        .skills{
+          width: 230px;
+        }
+      }
+    }
+    }
+//media query ends
 }

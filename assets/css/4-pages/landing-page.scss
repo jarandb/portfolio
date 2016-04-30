@@ -1,15 +1,16 @@
 .landing{
-background-image: url("/assets/img/hero.jpg");
+background-image: url("/assets/img/fjes2.jpg");
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
 height: auto;
 
+
   h1{
     font-family: lumberjackrough, helvetica, sans-serif;
     text-align: center;
     font-size: 72px;
-    color: $main;
+    color: $black ;
     padding: 1em  0 ;
     margin: 0;
 
@@ -64,13 +65,12 @@ height: auto;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .landing{
 
 
     h1{
-        font-size: 2.75em;
-        padding-top: 1em;
+        font-size: 1.8em;
       }
   }
 }

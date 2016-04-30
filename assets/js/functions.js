@@ -1,10 +1,19 @@
-$( document ).ready(function() {
+var frontpage = ".landing, .portfolio, .about, .contact, footer";
 
-  // $(".logo").on("click"),function{
-  //   $(".landing").removeClass("hidden");
-  // };
+$(".modal").hide();
 
-  $(".modal").on("click",function(){
-    $(".hidden").toggleClass();
-  });
+$(".open-modal").click(function(){
+  $(frontpage).hide();
+  $(".modal").show(500);
+
+});
+
+$(".exit-modal, #home-modal").click(function (){
+  $(".modal").hide();
+  $(frontpage).show(500);
+});
+
+$("#about-modal, #port-modal, #contact-modal").click(function (){
+  $(".modal").hide("fast");
+  $(frontpage).show(500);
 });

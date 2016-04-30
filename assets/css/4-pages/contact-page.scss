@@ -1,21 +1,40 @@
 .contact{
-  background-image: url("/assets/img/about-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $background;
   height: auto;
 
   .contact-wrapper{
+      padding: 0 0 0 10%;
 
     .contact-mail{
       text-align: center;
       color: $black;
       margin: 0;
-      padding: 1em 0 2em 0;
+      padding: 1em 0;
       font-size: 3em;
 
     }
   }
 }
 
-  
+
+@media screen and (max-width: 550px) {
+  .contact{
+    .contact-wrapper{
+
+      .contact-mail{
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact{
+    .contact-wrapper{
+
+      .contact-mail{
+        font-size: 1.75em;
+      }
+    }
+  }
+}
