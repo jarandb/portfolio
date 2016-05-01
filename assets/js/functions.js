@@ -17,3 +17,7 @@ $("#about-modal, #port-modal, #contact-modal").click(function (){
   $(".modal").hide("fast");
   $(frontpage).show(500);
 });
+
+$(".prosjekter .row a .project").hover(function(){
+    $(this).css("width: 110%, height: auto");
+});
