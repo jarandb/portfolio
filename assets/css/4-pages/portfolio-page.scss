@@ -1,5 +1,5 @@
 .portfolio{
-  background-color: $background;
+  background-color: $main-background;
   height: auto;
   padding: 0;
 
@@ -40,17 +40,17 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            
+
 
             &:hover{
-
+              width: 200%;
 
             }
 
             h3{
               text-align: center;
               font-size: 2em;
-              color: $background;
+              color: $highlight;
             }
           }
         }

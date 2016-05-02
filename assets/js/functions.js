@@ -1,23 +1,20 @@
 var frontpage = ".landing, .portfolio, .about, .contact, footer";
+var sonic = "fast"
 
 $(".modal").hide();
 
 $(".open-modal").click(function(){
-  $(frontpage).hide();
-  $(".modal").show(500);
+  $(frontpage).fadeOut(sonic);
+  $(".modal").fadeIn(sonic);
 
 });
 
 $(".exit-modal, #home-modal").click(function (){
-  $(".modal").hide();
-  $(frontpage).show(500);
+  $(".modal").fadeOut(sonic);
+  $(frontpage).fadeIn(sonic);
 });
 
 $("#about-modal, #port-modal, #contact-modal").click(function (){
-  $(".modal").hide("fast");
-  $(frontpage).show(500);
-});
-
-$(".prosjekter .row a .project").hover(function(){
-    $(this).css("width: 110%, height: auto");
+  $(".modal").fadeOut(sonic);
+  $(frontpage).fadeIn(sonic);
 });

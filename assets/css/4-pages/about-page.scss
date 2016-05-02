@@ -1,8 +1,5 @@
 .about{
-  background-image: url("/assets/img/about-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $background-second;
   height: auto;
   .about-wrapper{
     padding: 0 0 0 10%;

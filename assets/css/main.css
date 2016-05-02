@@ -410,10 +410,7 @@ ul {
 }
 
 .about {
-  background-image: url("/assets/img/about-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #6E7DAE;
   height: auto;
 }
 
@@ -686,10 +683,14 @@ ul {
   background-repeat: no-repeat;
 }
 
+.portfolio .portfolio-wrapper .prosjekter .row a .project:hover {
+  width: 200%;
+}
+
 .portfolio .portfolio-wrapper .prosjekter .row a .project h3 {
   text-align: center;
   font-size: 2em;
-  color: #CECECE;
+  color: #EFEFFF;
 }
 
 .portfolio .portfolio-wrapper .prosjekter .row .bratan {
