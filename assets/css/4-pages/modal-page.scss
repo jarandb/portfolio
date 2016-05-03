@@ -6,7 +6,24 @@
     text-align: center;
     position: relative;
     .menu-modal{
-      padding: 3em 0 2em 0;
+      padding: 3em 0 1em 0;
+      ul{
+        padding: 0;
+
+        a{
+          color: $menu;
+          background-color: $gold;
+          width: 100%;
+          display: block;
+          padding: 5px 0;
+
+
+
+          &:hover{
+            background-color: lighten($gold, 10%);
+          }
+        }
+      }
     }
     .modal-pitch{
       color: $pitch;

@@ -33,25 +33,21 @@
   </section>
 
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio-anchor">
     <div class="wrapper portfolio-wrapper">
       <h2>Prosjekter</h2>
 
         <div class="prosjekter">
           <div class="row">
+            <div id="slides">
+              <img src="http://placehold.it/940x528">
+              <img src="http://placehold.it/940x528">
+              <img src="http://placehold.it/940x528">
+              <img src="http://placehold.it/940x528">
+              <img src="http://placehold.it/940x528">
+            </div>
 
-            <a href="http://www.bratan.no">
-              <div class="project bratan">
-                <h3>Bratan gård</h3>
-              </div>
-            </a>
-
-            <a href="http://frigg.hiof.no/bo16-g20/rettlin/index.html">
-              <div class="project rettlin">
-                <h3>Rettlin</h3>
-              </div>
-            </a>
-
+            <!-- end row -->
           </div>
 
 
@@ -211,18 +207,21 @@
           </nav>
         </header>
         <div class="menu-modal">
-          <div id="home-modal">
-            <p>Hjem</p>
-          </div>
-          <div id="port-modal">
-            <p>Portfolio</p>
-          </div>
-          <div id="about-modal">
-            <p>Om Jarand</p>
-          </div>
-          <div id="contact-modal">
-            <p>Kontakt</p>
-          </div>
+          <ul>
+
+              <a href="#landing" id="home-modal">
+                Hjem
+              </a>
+              <a href="#portfolio-anchor" id="port-modal">
+                Portfolio
+              </a>
+              <a href ="#aboutView" id="about-modal">
+                Om Jarand
+              </a>
+              <a href="#contact" id="contact-modal">
+                Kontakt
+              </a>
+          <ul>
         </div>
         <h2 class="modal-pitch">
           Trenger du en webside?
@@ -243,7 +242,8 @@
       <p>2016</p>
     </footer>
 
-<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
 </body>
 </html>

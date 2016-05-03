@@ -393,7 +393,23 @@ ul {
 }
 
 .modal .modal-wrap .menu-modal {
-  padding: 3em 0 2em 0;
+  padding: 3em 0 1em 0;
+}
+
+.modal .modal-wrap .menu-modal ul {
+  padding: 0;
+}
+
+.modal .modal-wrap .menu-modal ul a {
+  color: #576073;
+  background-color: #d4bb9b;
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+}
+
+.modal .modal-wrap .menu-modal ul a:hover {
+  background-color: #e3d3bf;
 }
 
 .modal .modal-wrap .modal-pitch {
@@ -410,7 +426,7 @@ ul {
 }
 
 .about {
-  background-color: #6E7DAE;
+  background-color: #797C86;
   height: auto;
 }
 
@@ -672,6 +688,10 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.portfolio .portfolio-wrapper .prosjekter .row #slides {
+  display: none;
 }
 
 .portfolio .portfolio-wrapper .prosjekter .row a .project {
